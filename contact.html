@@ -221,34 +221,46 @@
                 </div> -->
                 <!-- map end -->
 
-                <!-- contact form -->
-                <section id="contact">
-                    <div class="container mil-p-120-90">
-                        <!-- <h3 class="mil-center mil-up mil-mb-120">Let's <span class="mil-thin">Talk</span></h3> -->
-                        <form class="row align-items-center">
-                            <div class="col-lg-6 mil-up">
-                                <input type="text" placeholder="What's your name">
-                            </div>
-                            <div class="col-lg-6 mil-up">
-                                <input type="email" placeholder="Your Email">
-                            </div>
-                            <div class="col-lg-12 mil-up">
-                                <textarea placeholder="Tell us about our project"></textarea>
-                            </div>
-                            <div class="col-lg-8">
-                                <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose your personal information to third parties.</p>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="mil-adaptive-right mil-up mil-mb-30">
-                                    <button type="submit" class="mil-button mil-arrow-place">
-                                        <span>Send message</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
-                <!-- contact form end -->
+<!-- contact form -->
+<section id="contact">
+    <div class="container mil-p-120-90">
+        <form class="row align-items-center" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="242280e0-e074-4fa0-8da1-e18de2e42259">
+
+            <!-- User Name -->
+            <div class="col-lg-6 mil-up">
+                <input type="text" name="name" placeholder="What's your name" required>
+            </div>
+
+            <!-- User Email -->
+            <div class="col-lg-6 mil-up">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <!-- Message -->
+            <div class="col-lg-12 mil-up">
+                <textarea name="message" placeholder="Tell us about our project" required></textarea>
+            </div>
+
+            <div class="col-lg-8">
+                <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> We promise not to disclose your personal information to third parties.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="mil-adaptive-right mil-up mil-mb-30">
+                    <button type="submit" class="mil-button mil-arrow-place">
+                        <span>Send message</span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- contact form end -->
+
+
+
 
                 <!-- footer -->
                 <footer class="mil-dark-bg">
@@ -256,16 +268,22 @@
                         <div class="container mil-p-120-60">
                             <div class="row justify-content-between">
                                 <div class="col-md-4 col-lg-4 mil-mb-60">
-
                                     <div class="mil-muted mil-logo mil-up mil-mb-30">Daira EdTech.</div>
-
                                     <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
+                                    <form class="mil-subscribe-form mil-up" action="https://api.web3forms.com/submit"
+                                        method="POST">
+                                        <!-- Web3Forms Access Key (Replace YOUR_ACCESS_KEY_HERE with your actual access key) -->
+                                        <input type="hidden" name="access_key"
+                                            value="242280e0-e074-4fa0-8da1-e18de2e42259">
 
-                                    <form class="mil-subscribe-form mil-up">
-                                        <input type="text" placeholder="Enter our email">
-                                        <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+                                        <!-- User Email -->
+                                        <input type="email" name="email" placeholder="Enter your email" required>
+                                        <button type="submit"
+                                            class="mil-button mil-icon-button-sm mil-arrow-place"></button>
+
+                                        <!-- Optionally, you can add a subject or any other hidden fields here -->
+                                        <input type="hidden" name="subject" value="Newsletter Subscription">
                                     </form>
-
                                 </div>
                                 <div class="col-md-7 col-lg-6">
                                     <div class="row justify-content-end">
@@ -286,8 +304,8 @@
                                                         <a href="contact.html">Contact</a>
                                                     </li>
                                                     <!-- <li class="mil-up">
-                                                        <a href="blog.html">Blog</a>
-                                                    </li> -->
+                                                                        <a href="blog.html">Blog</a>
+                                                                    </li> -->
                                                 </ul>
                                             </nav>
 
@@ -315,12 +333,15 @@
 
                                             <h6 class="mil-muted mil-up mil-mb-30">Chennai</h6>
 
-                                            <p class="mil-light-soft mil-up">55/119, nelson Manickam Rd, Aminjikarai, Shenoy Nagar, Chennai, Egmore Nungambakkam, Tamil Nadu, India, 600030 <span class="mil-no-wrap"></span></p>
+                                            <p class="mil-light-soft mil-up">55/119, nelson Manickam Rd, Aminjikarai,
+                                                Shenoy Nagar,
+                                                Chennai, Egmore Nungambakkam, Tamil Nadu, India, 600030 <span
+                                                    class="mil-no-wrap"></span></p>
 
                                         </div>
                                         <div class="col-md-6 col-lg-5 mil-mb-60">
 
-                                            
+
 
                                         </div>
                                     </div>
@@ -331,13 +352,17 @@
                                     <div class="mil-vert-between">
                                         <div class="mil-mb-30">
                                             <ul class="mil-social-icons mil-up">
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
-                                                <li><a href="#." target="_blank" class="social-icon"> <i class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i
+                                                            class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i
+                                                            class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i
+                                                            class="far fa-circle"></i></a></li>
+                                                <li><a href="#." target="_blank" class="social-icon"> <i
+                                                            class="far fa-circle"></i></a></li>
                                             </ul>
                                         </div>
-                                       <!-- <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p> -->
+                                        <!-- <p class="mil-light-soft mil-up">© Copyright 2023 - Mil. All Rights Reserved.</p> -->
                                     </div>
 
                                 </div>
